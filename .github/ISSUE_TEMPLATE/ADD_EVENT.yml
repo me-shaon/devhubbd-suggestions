@@ -1,0 +1,52 @@
+name: Add Event
+description: Help us to add more tech event information.
+title: "[Add event]: "
+labels: ["add-event"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us to add more event information.
+  - type: input
+    id: title
+    attributes:
+      label: Event title
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Event link
+    validations:
+      required: true
+  - type: input
+    id: arranged_by
+    attributes:
+      label: Arranged by
+    validations:
+      required: true
+  - type: input
+    id: place
+    attributes:
+      label: Event location
+    validations:
+      required: true
+  - type: input
+    id: start_time
+    attributes:
+      label: Start time
+    validations:
+      required: true
+  - type: input
+    id: end_time
+    attributes:
+      label: End time
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Event description
+    validations:
+      required: false
+  
