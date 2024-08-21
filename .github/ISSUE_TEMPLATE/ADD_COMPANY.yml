@@ -37,10 +37,11 @@ body:
       label: Company career page
     validations:
       required: false
-  - type: checkboxes
+  - type: dropdown
     id: work_type
     attributes:
       label: Work type
+      multiple: true
       options:
         - On-site
         - Hybrid
@@ -52,15 +53,15 @@ body:
     attributes:
       label: Hires freshers?
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
   - type: dropdown
     id: hires_interns
     attributes:
       label: Hires interns?
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
   - type: textarea
     id: office_location
     attributes:
