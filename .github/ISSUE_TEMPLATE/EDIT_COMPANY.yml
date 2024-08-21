@@ -1,0 +1,103 @@
+name: Edit Company Information
+description: Help us to improve company information.
+title: "[Edit company]: "
+labels: ["edit-company"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us to add more company information.
+  - type: input
+    id: name
+    attributes:
+      label: Company name
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Company website link
+    validations:
+      required: false
+  - type: input
+    id: linkedin
+    attributes:
+      label: Company LinkedIn page
+    validations:
+      required: false
+  - type: input
+    id: facebook
+    attributes:
+      label: Company Facebook page
+    validations:
+      required: false
+  - type: input
+    id: career_page
+    attributes:
+      label: Company career page
+    validations:
+      required: false
+  - type: dropdown
+    id: work_type
+    attributes:
+      label: Work type
+      multiple: true
+      options:
+        - On-site
+        - Hybrid
+        - Fully remote
+    validations:
+      required: true
+  - type: dropdown
+    id: hires_freshers
+    attributes:
+      label: Hires freshers?
+      options:
+        - 'Yes'
+        - 'No'
+  - type: dropdown
+    id: hires_interns
+    attributes:
+      label: Hires interns?
+      options:
+        - 'Yes'
+        - 'No'
+  - type: textarea
+    id: office_location
+    attributes:
+      label: Office location
+      description: (Fill this up if you have a physical office)
+      placeholder: Dhaka, Bangladesh
+    validations:
+      required: false
+  - type: input
+    id: established_at
+    attributes:
+      label: Established at
+    validations:
+      required: false
+  - type: dropdown
+    id: total_employees
+    attributes:
+      label: Total employees
+      options:
+        - 1-10
+        - 11-50
+        - 51-100
+        - 101-500
+        - 500+
+    validations:
+      required: true
+  - type: input
+    id: tech_stacks
+    attributes:
+      label: Primary tech stacks
+      description: (Comma separate multiple values)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Company description
+    validations:
+      required: false
